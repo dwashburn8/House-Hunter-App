@@ -1,0 +1,43 @@
+{
+  "name": "auth-project-two",
+  "version": "3.0.0",
+  "description": "Project 2 Starter",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint --quiet .; exit 0",
+    "fix": "eslint --fix .; exit 0",
+    "test": "jest --verbose --coverage"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdanyalk/auth-project-two.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sdanyalk/auth-project-two/issues"
+  },
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
+    "bcrypt": "^4.0.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "express-session": "^1.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.1.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^5.21.11"
+  },
+  "devDependencies": {
+    "coveralls": "^3.1.0",
+    "jest": "^26.0.1",
+    "supertest": "^4.0.2",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.16.0"
+  }
+}

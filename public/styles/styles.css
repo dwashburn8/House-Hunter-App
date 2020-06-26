@@ -1,0 +1,25 @@
+.list-group-item {
+  line-height: 2.5;
+}
+
+.backgroundImg {
+  background-image: url("https://cdn.pixabay.com/photo/2016/06/24/10/47/architecture-1477041_1280.jpg");
+  height: 900px;
+  max-width: 100%;
+ background-repeat: no-repeat;
+background-position: center;
+background-size: 100%;
+}
+
+#searchDiv {
+ padding-top: 25%;
+}
+
+.searchDivs {
+  margin-left: 80px;
+}
+
+#mapid{
+  height: 400px;
+}
+

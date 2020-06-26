@@ -1,0 +1,101 @@
+<div id="home">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">House Hunter</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link active" href="/">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/favorites">Favorites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div  class=" text-center alert alert-danger alert-dismissible fade show sticky-top" role="alert">
+  <strong>Home Saved!</strong>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+  <h3 class="text-center" id="userID" data-id={{user.id}}>Hello {{user.email}}</h3>
+  <div class="container text-center backgroundImg">
+
+    <div class="row">
+      <div id="searchDiv" class="col-12">
+        <h1 class="text-center text-white">Find your dream home</h1>
+        <div class="input-group mb-3 pl-5 pr-5">
+          <input id="searchValue" type="text" class="form-control" placeholder="Phoenix, AZ">
+          <div class="input-group-append">
+            <button class="btn btn-dark pl-5 pr-5" type="button" id="searchBtn">Search</button>
+          </div>
+        </div>
+
+      </div>
+<div id="maxPriceDiv" class="col-3 input-group mb-3 searchDivs">
+        <select class="custom-select" id="maxPrice">
+          <option value="0" selected>Max Price</option>
+          <option value="100000">$100,000</option>
+          <option value="200000">$200,000</option>
+          <option value="300000">$300,000</option>
+          <option value="400000">$400,000</option>
+          <option value="500000">$500,000</option>
+          <option value="1000000">$1,000,000</option>
+
+        </select>
+      </div>
+            <div id="maxPriceDiv" class="col-3 input-group mb-3 searchDivs">
+        <select class="custom-select" id="minBeds">
+          <option value="0" selected>Min Bedrooms</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+
+
+        </select>
+
+      </div>
+                  <div class="col-3 input-group mb-3 searchDivs">
+        <select class="custom-select" id="minBaths">
+          <option value="0" selected>Min Bathrooms</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+
+
+        </select>
+
+      </div>
+    </div>
+  </div>
+
+  <br>
+    <div class="container">
+      <div id="mapRow" class="row">
+        <div id="mapid" class="col-12">
+
+        </div>
+      </div>
+    </div>
+
+  <br>
+
+
+  <div class="container text-center" id="housesContainer">
+    <div class="row" id="houses">
+    </div>
+  </div>
+
+
+</div>

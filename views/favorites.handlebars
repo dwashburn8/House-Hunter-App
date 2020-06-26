@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">House Hunter</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item  active">
+                <a class="nav-link" href="/favorites">Favorites</a>
+            </li>
+                    <li class="nav-item">
+          <a class="nav-link" href="/logout">Logout</a>
+        </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 pt-3 text-center bg-primary text-white">
+            <h1>Saved Homes</h1>
+            <br>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        {{#each favs}}
+        <div class="col-lg-4 col-sm-12 text-center pt-3 deleteWrapper">
+
+            <h3>{{this.dataValues.address}}</h3>
+            <h3>{{this.dataValues.city}}, {{this.dataValues.state_code}}</h3>
+            <img src="{{this.dataValues.img}}" alt="house-photo" height="200px" width="350px">
+            <p>Price: ${{this.dataValues.price}}</p>
+            <p>Bedrooms: {{this.dataValues.bedrooms}}</p>
+            <p>Bathrooms: {{this.dataValues.bathrooms}}</p>
+            <p>Square Feet: {{this.dataValues.square_feet}}</p>
+            <button value="{{this.dataValues.id}}" class="btn btn-primary deleteFav">Remove From Saved Homes</button>
+
+        </div>
+        {{/each}}
+    </div>
+</div>
